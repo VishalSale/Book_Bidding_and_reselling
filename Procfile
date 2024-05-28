@@ -1,1 +1,1 @@
-web: gunicorn commerce.wsgi --log-file -
+web: gunicorn --config gunicorn.conf.py myproject.wsgi:application

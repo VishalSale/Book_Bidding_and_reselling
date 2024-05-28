@@ -13,4 +13,8 @@ from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'commerce.settings')
 
+accesslog = '/path/to/access.log'
+errorlog = '/path/to/error.log'
+loglevel = 'info'
+
 application = get_wsgi_application()
